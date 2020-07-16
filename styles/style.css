@@ -71,21 +71,48 @@ img #google-logo {
     width: 200px;
 }
 
-input[type="search"] {
-    width: 500px;
-    height: 40px;
-    margin: 20px;
-    border-radius: 50px;
+.search {
+    display: flex;
+    margin: 20px 0;
     border: 1px solid lightgray;
+    border-radius: 50px;
+    width: 600px;
+}
+
+.search button {
+    border-radius: 50px;
+    background: url(../images/microphone.webp) no-repeat center;
+    background-size: 25px;
+    margin-right: 10px;
+}
+
+input[type="search"] {
+    width: 600px;
+    height: 50px;
+    border: none;
+    padding-left: 50px;
+    font-size: 1.3rem;
 }
 
 input[type="search"]:focus {
-    outline: none;;
+    outline: none;
 }
 
+.search-query{
+    background: url(../images/search.png) no-repeat 2%;
+    background-size: 25px;
+}
 
 .buttons {
+    margin: 20px 0;
+    width: 300px;
     display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 15px;
+    border: none;
 }
 
 /* Footer */
