@@ -111,17 +111,38 @@ input[type="search"]:focus {
 }
 
 button {
-    padding: 15px;
+    color: #5F6368;
+    padding: 10px 15px;
     border: none;
 }
 
 /* Footer */
 footer .container {
-    height: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.country, .footer-nav {
+    padding: 15px 15px 15px 30px;   
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-nav ul {
     display: flex;
+}
+
+.footer-nav ul li {
+    padding-right: 20px;
+}
+
+footer a {
+    font-size: 1.1rem;
+    color: #5F6368;
 }
