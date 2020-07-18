@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-height: 100vh;
     justify-content: space-between;
 }
 
@@ -110,6 +111,10 @@ input[type="search"]:focus {
     justify-content: space-evenly;
 }
 
+.buttons button:focus {
+    outline: none;
+}
+
 button {
     color: #5F6368;
     padding: 10px 15px;
@@ -145,4 +150,11 @@ footer .container {
 footer a {
     font-size: 1.1rem;
     color: #5F6368;
+}
+
+
+@media (max-width:425px) {
+    .search {
+        max-width: 410px;
+    }
 }
