@@ -1,3 +1,5 @@
+/*  link colors: #5f6368, border-bottom #ebebeb */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +8,19 @@
     font-size: 14px;
 }
 
+.container {
+    height: 2000px;
+}
+
 ul {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
 
 /* Header */
 
@@ -16,6 +28,11 @@ header {
     display: grid;
     grid-template-columns: 150px 700px auto 150px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
 }
 
 header a {
@@ -85,4 +102,15 @@ header a img {
 
 .right-nav {
     grid-column-start: 4;
+}
+
+/* Main */
+
+main .main-content {
+    width: 700px;
+    margin-left: 150px;
+}
+
+.result {
+    margin: 20px 0;
 }
